@@ -7,18 +7,17 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    # Show pwd
-    - run: pwd ~
     # 设置 Secrets
     - name: Set Secret
-      run: echo ${{ secrets.KEY }} >> "~/id_rsa"
+      run: mkdir /home/runner/.ssh
+    - run: echo ${{ secrets.KEY }} /home/runner/.ssh/id_rsa
     # 部署到服务器
     - name: Deploy
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        key: "~/id_rsa"
+        key: "/home/runner/.ssh/id_rsa"
         port: ${{ secrets.PORT }}
         script: |
           cd /home/aynimor
