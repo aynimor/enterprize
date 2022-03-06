@@ -10,7 +10,7 @@ jobs:
     # 设置 Secrets
     - name: Set Secret
       run: mkdir /home/runner/.ssh
-    - run: echo ${{ secrets.KEY }} /home/runner/.ssh/id_rsa
+    - run: echo "${{ secrets.KEY }}" /home/runner/.ssh/id_rsa
     # 部署到服务器
     - name: Deploy
       uses: appleboy/ssh-action@master
