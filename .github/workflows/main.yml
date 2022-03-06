@@ -9,14 +9,14 @@ jobs:
     steps:
     # 设置 Secrets
     - name: Set Secret
-      run: echo ${{ secrets.KEY }} >> "/root/id_rsa"
+      run: echo ${{ secrets.KEY }} >> "~/id_rsa"
     # 部署到服务器
     - name: Deploy
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        key: "/root/id_rsa"
+        key: "~/id_rsa"
         port: ${{ secrets.PORT }}
         script: |
           cd /home/aynimor
