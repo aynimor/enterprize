@@ -1,0 +1,17 @@
+site_name: Aynimor
+theme: 
+  name: readthedocs
+  highlightjs: true
+site_description: Aynimor 的网络日志，记录日常学习，分享学习内容
+site_author: Aynimor
+repo_url: https://github.com/aynimor/enterprize
+nav:
+- 主页: index.md
+- Rust:
+  - Rust 程序设计读书笔记:
+    - 第一章: content/rust/programming_rust/chapter1.md
+    - 第二章: content/rust/programming_rust/chapter2.md
+- 杂项:
+  - 广度优先搜索: content/misc/breadth_first_search.md
+  - Mysql 安装及配置: content/misc/mysql_insall_and_configuration.md
+  - Python JSON 解析器实现: content/misc/python_json_parser.md
