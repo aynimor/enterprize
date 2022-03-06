@@ -7,6 +7,8 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+    # Show pwd
+    - run: pwd ~
     # 设置 Secrets
     - name: Set Secret
       run: echo ${{ secrets.KEY }} >> "~/id_rsa"
