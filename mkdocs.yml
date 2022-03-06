@@ -7,7 +7,7 @@ site_author: Aynimor
 repo_url: https://github.com/aynimor/enterprize
 nav:
 - 主页: index.md
-- Rust:
+- Rust 编程语言:
   - Rust 程序设计读书笔记:
     - 第一章: content/rust/programming_rust/chapter1.md
     - 第二章: content/rust/programming_rust/chapter2.md
