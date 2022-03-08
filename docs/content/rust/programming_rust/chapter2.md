@@ -1,8 +1,6 @@
-## 第二章 Rust 初体验
-
 ### 2.1 下载和安装
 
-安装：https://www.rust-lang.org/learn/get-started
+安装：[https://www.rust-lang.org/learn/get-started](https://www.rust-lang.org/learn/get-started)
 
 ``` shell
 $ cargo --version
