@@ -4,12 +4,17 @@ theme:
   highlightjs: true
 site_description: 如晦的网络日志，记录日常学习，分享学习内容
 site_author: 如晦
-repo_url: https://github.com/aynimor/enterprize
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences 
 nav:
 - 主页: index.md
-- Rust 程序设计读书笔记:
-  - 第一章 为什么是Rust: content/rust/programming_rust/chapter1.md
-  - 第二章 Rust 初体验: content/rust/programming_rust/chapter2.md
+- Rust 编程语言:
+  - Rust 程序设计读书笔记:
+    - 第一章 为什么是Rust: content/rust/programming_rust/chapter1.md
+    - 第二章 Rust 初体验: content/rust/programming_rust/chapter2.md
+    - 第三章 基本类型: content/rust/programming_rust/chapter3.md
 - 杂项:
   - 广度优先搜索: content/misc/breadth_first_search.md
   - Mysql 安装及配置: content/misc/mysql_insall_and_configuration.md
