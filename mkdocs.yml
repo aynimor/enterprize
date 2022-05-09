@@ -16,6 +16,8 @@ nav:
     - 第二章 Rust 初体验: content/rust/programming_rust/chapter2.md
     - 第三章 基本类型: content/rust/programming_rust/chapter3.md
     - 第四章 所有权: content/rust/programming_rust/chapter4.md
+- GIT:
+  - GIT 基本原理（一）: content/GIT/git-rationale1.md
 - 杂项:
   - 广度优先搜索: content/misc/breadth_first_search.md
   - Mysql 安装及配置: content/misc/mysql_insall_and_configuration.md
