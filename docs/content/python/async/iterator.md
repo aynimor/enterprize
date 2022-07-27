@@ -40,7 +40,7 @@ for iterable in iterables:
 # <_io.TextIOWrapper name='1.txt' mode='r' encoding='cp936'>
 ```
 
-### 迭代器
+## 迭代器
 
 为了了解迭代器的共通性，我们继续使用 `common_attrs()` 方法来获取迭代器的共同属性，这次我们得到了两个相同的属性（接口） `__iter__` 和 `__next__`
 
@@ -52,7 +52,7 @@ print(iterator_common_atts)
 # {'__iter__', '__next__'}
 ```
 
-#### 迭代器的使用
+### 迭代器的使用
 
 ```python
 iterable = ['a', 'b', 'c']	# 可迭代对象
@@ -88,7 +88,7 @@ while True:
         break
 ```
 
-#### 自定义迭代器
+### 自定义迭代器
 
 ``` python
 from typing import Iterable
@@ -183,22 +183,22 @@ for item in MyIterator(iterms):
 
 > 在 [Python 官方文档](https://docs.python.org/3/glossary.html#term-iterator)中明确指出了，迭代器必须同时实现 `__next__` 和 `__iter__` 两个接口，这称为  **迭代器协议**。
 >
-> 根据这个协议，迭代器必须是可迭代的，换言之，**迭代器** 是一种 **可迭代对象
+> 根据这个协议，迭代器必须是可迭代的，换言之，**迭代器** 是一种 **可迭代对象**
 
-#### 迭代器的意义
+### 迭代器的意义
 
 - 通过 `next()` 方法获取数据，来屏蔽底层不同的数据获取方式，简化编程
 - 容器类数据结构只须关心数据的静态存储，由迭代器来记录数据迭代过程中的状态信息
 
 可迭代对象
 
-- 容器类
+容器类
   - 列表，元组，字段，集合等
   - 只有 `__iter__` 接口
   - 存储静态数据
   - 需要额外的迭代器来迭代数据
   - 可多次迭代
-- 迭代器类
+迭代器类
   - 文件，`StringIO` 等
   - 需同时实现 `__iter__` 和 `__next__` 接口
   - 只能迭代一次
